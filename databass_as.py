@@ -21,7 +21,7 @@ def init_db():
     #1.秘密の宝箱から全部「これとって！」（読み出し）
     c.execute("SELECT file_name, content FROM scout_table")
     all_files = c.fetchall()#全部取って来たよ（笑）
-    st.write("---🍎AKARI SHORI GALLEY🍏---") 
+    st.write("---🍎AKARI GALLEY🍏---") 
     #オシャレな棚を作る♪（カラム数）
     cols = st.columns(3)
     for i, (name, data) in enumerate(all_files):
